@@ -21,11 +21,13 @@
     "lint:fix": "npm run lint:js:fix && npm run lint:css:fix && npm run lint:php:fix",
     "playground": "npm run build && npx @wp-now/wp-now start --php=8.3 --blueprint=.playground/blueprint.json",
     "playground:feedback-dev": "bash scripts/feedback-dev.sh",
-    "export:feedback": "bash scripts/export-feedback.sh"
+    "export:feedback": "bash scripts/export-feedback.sh",
+    "vibe": "claude"
   },
   "devDependencies": {
     "@wordpress/scripts": "^31.0.0",
-    "del-cli": "^5.1.0"
+    "del-cli": "^5.1.0",
+    "@anthropic-ai/claude-code": "^2.1.80"
   },
   "dependencies": {
     "@mlc-ai/web-llm": "^0.2.82",
